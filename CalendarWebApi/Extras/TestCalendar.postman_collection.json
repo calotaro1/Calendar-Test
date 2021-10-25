@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "bdaa9f38-46a7-46a0-8f95-1cd820b21409",
+		"name": "TestCalendar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44310/calendar/sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar/sort",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"sort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44310/calendar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Event1\",\r\n    \"time\": 1576436425,\r\n    \"location\":\"Miami\",\r\n    \"eventOrganizer\":\"John\",\r\n    \"members\":\"Any,Jay\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44310/calendar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44310/calendar/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44310/calendar/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Event2\",\r\n    \"time\": 1576436425,\r\n    \"location\":\"Florida\",\r\n    \"eventOrganizer\":\"Sam\",\r\n    \"members\":\"Eric,Lupita\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44310/calendar/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44310/calendar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44310/calendar/query?eventOrganizer=EventOrganizer1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar/query?eventOrganizer=EventOrganizer1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"query"
+					],
+					"query": [
+						{
+							"key": "eventOrganizer",
+							"value": "EventOrganizer1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44310/calendar/query?name=Event45",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar/query?name=Event45",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"query"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Event45"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
