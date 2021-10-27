@@ -6,27 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "https://localhost:44310/calendar/sort",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://localhost:44310/calendar/sort",
-					"protocol": "https",
-					"host": [
-						"localhost"
-					],
-					"port": "44310",
-					"path": [
-						"calendar",
-						"sort"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "https://localhost:44310/calendar",
+			"name": "1 Add new event",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -54,7 +34,7 @@
 			"response": []
 		},
 		{
-			"name": "https://localhost:44310/calendar/1",
+			"name": "2 Delete event by id",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -74,7 +54,7 @@
 			"response": []
 		},
 		{
-			"name": "https://localhost:44310/calendar/2",
+			"name": "3 Edit event by id",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -103,7 +83,7 @@
 			"response": []
 		},
 		{
-			"name": "https://localhost:44310/calendar",
+			"name": "4 Get all events",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -122,7 +102,7 @@
 			"response": []
 		},
 		{
-			"name": "https://localhost:44310/calendar/query?eventOrganizer=EventOrganizer1",
+			"name": "5 Get all events by organizer",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -148,7 +128,59 @@
 			"response": []
 		},
 		{
-			"name": "https://localhost:44310/calendar/query?name=Event45",
+			"name": "6 Get event by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar/query?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"query"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 Get event by location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar/query?location=Miami",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"query"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Miami"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8 Get event by name",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -168,6 +200,26 @@
 							"key": "name",
 							"value": "Event45"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9 Sort event as per time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44310/calendar/sort",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"calendar",
+						"sort"
 					]
 				}
 			},
