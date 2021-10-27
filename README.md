@@ -21,7 +21,7 @@ Microsoft SQL Server<br>
 <h2>Database</h2>
 Install <a href="https://www.microsoft.com/es-mx/sql-server/sql-server-downloads">SQL Server</a> from Microsoft<br>
 Create a new local database called "ProjectTestDB"<br>
-Create the Calendars table in the default schema<br>
+Create the Calendars table in the default schema with the <a href="https://github.com/calotaro1/Calendar-Test/blob/main/CalendarWebApi/Extras/CreateTableCalendars.sql">SQL file</a><br> <br>
 Should be like this ![image](https://user-images.githubusercontent.com/88073656/138998880-1b2840ef-e2a8-45bb-b352-eb5cadef65dd.png) <br>
 
 <h2>API Project</h2>
